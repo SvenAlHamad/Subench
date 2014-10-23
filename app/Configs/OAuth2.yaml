@@ -1,0 +1,13 @@
+OAuth2:
+    FacebookPlayer:
+        Server: \Webiny\Component\OAuth2\Server\Facebook
+        ClientId: 903917359627883
+        ClientSecret: decb75300cab05ef8baac0b95ae37327
+        Scope: email
+        RedirectUri: '/player/login'
+    FacebookTeam:
+        Server: \Webiny\Component\OAuth2\Server\Facebook
+        ClientId: 903917359627883
+        ClientSecret: decb75300cab05ef8baac0b95ae37327
+        Scope: email,user_friends,public_profile
+        RedirectUri: '/team/login'

@@ -1,0 +1,120 @@
+.subench_logo {
+	color: rgb(255, 198, 2);
+	font-size: 70px;
+}
+
+.subench_menu {
+	font-size: 20px;
+	padding-top: 10px;
+}
+
+.subench_message {
+	font-size: 40;
+	text-align: center;
+}
+
+.subench_tagline {
+	color: rgb(255, 198, 2);
+	text-align: center;
+	font-size: 50px;
+}
+
+.whatwedo {
+	color: rgb(255, 198, 2);
+}
+
+.quote {
+	color: black;
+}
+
+.subench_form {
+	background-color: rgb(255, 198, 2);
+	padding: 10px;
+}
+
+.subench_form_label {
+
+}
+
+.player {
+	border: solid;
+	border-width: 1px;
+	display: inline-block;
+}
+
+.team {
+	width: 100%;
+	text-align: center;
+	border: solid;
+	border-width: 2px;
+}
+
+.team_name {
+	text-align: center;
+}
+
+.team_info {
+	padding: 20px 40px;
+	font-size: 20px;
+	font-weight: bold;
+	display: inline-block;
+}
+
+.subs {
+	padding: 3px 10px;
+	display: inline-block;
+}
+
+.team_button {
+	display: inline-block;
+}
+
+.team_button ul li {
+	padding: 10px;
+	font-size: 15px;
+}
+
+.player_info {
+	padding: 20px;
+	font-size: 20px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.player_about {
+	width: 100%;
+	border: solid;
+	border-width: 2px;
+	padding: 30px;
+}
+
+.available {
+	color: green;
+	font-size: 30px;
+	font-style: bold;
+}
+
+.available p {
+
+}
+
+.float_left {
+	float: left;
+}
+
+.float_right {
+	float: right;
+}
+
+.float_center {
+	float: center;
+}
+
+.boxy.team {
+	width: 100;
+	overflow: hidden;
+}
+
+.chosen {
+	background-color: rgb(255,198,2);
+}

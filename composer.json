@@ -1,0 +1,6 @@
+{
+        "require": {
+                "webiny/framework": "dev-master"
+        },
+	"minimum-stability": "dev"
+}

@@ -1,0 +1,82 @@
+Router:
+    Routes:
+        SearchPlayerRefresh:
+            Path: /search/player/refresh
+            Callback:
+                Class: Subench\Pages\Search
+                Method: searchPlayerRefresh
+        SearchPlayer:
+            Path: /search/player
+            Callback:
+                Class: Subench\Pages\Search
+                Method: searchPlayer
+        SearchTeamRefresh:
+            Path: /search/team/refresh
+            Callback:
+                Class: Subench\Pages\Search
+                Method: searchTeamRefresh
+        SearchTeam:
+            Path: /search/team
+            Callback:
+                Class: Subench\Pages\Search
+                Method: searchTeam
+        PlayerLogin:
+            Path: /player/login
+            Callback:
+                Class: Subench\Pages\Player
+                Method: login
+        TeamLogin:
+            Path: /team/login
+            Callback:
+                Class: Subench\Pages\Team
+                Method: login
+        RegisterPlayerSubmit:
+            Path: /player/register/submit
+            Callback:
+                Class: Subench\Pages\Player
+                Method: registerSubmit
+        RegisterPlayerForm:
+            Path: /player/register
+            Callback:
+                Class: Subench\Pages\Player
+                Method: registerForm
+        RegisterTeamSubmit:
+            Path: /team/register/submit
+            Callback:
+                Class: Subench\Pages\Team
+                Method: registerSubmit
+        RegisterTeamFriendFinder:
+            Path: /team/register/friend-finder
+            Callback:
+                Class: Subench\Pages\Team
+                Method: friendFinder
+        PlayerPage:
+            Path: player/{playerId}
+            Callback:
+                Class: Subench\Pages\Player
+                Method: showPlayer
+        RegisterTeamForm:
+            Path: /team/register
+            Callback:
+                Class: Subench\Pages\Team
+                Method: registerForm
+        TeamPage:
+            Path: /team/{teamId}
+            Callback:
+                Class: Subench\Pages\Team
+                Method: showTeam
+        ConnectTeam:
+            Path: /connect/team/{id}
+            Callback:
+                Class: Subench\Pages\Connect
+                Method: connectTeam
+        ConnectPlayer:
+            Path: /connect/player/{id}
+            Callback:
+                Class: Subench\Pages\Connect
+                Method: connectPlayer
+        Homepage:
+            Path: /
+            Callback:
+                Class: Subench\Pages\Homepage
+                Method: showHomepage

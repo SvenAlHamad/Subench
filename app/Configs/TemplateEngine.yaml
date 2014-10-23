@@ -1,0 +1,8 @@
+TemplateEngine:
+    Engines:
+        Smarty:
+            ForceCompile: false
+            CacheDir: '/var/tmp/smarty/cache'
+            CompileDir: '/var/tmp/smarty/compile'
+            TemplateDir: '/var/www/projects/subench/app/Theme'
+            AutoEscapeOutput: false

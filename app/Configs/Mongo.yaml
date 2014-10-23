@@ -1,0 +1,11 @@
+Mongo:
+    Services:
+        Subench:
+            Class: \Webiny\Component\Mongo\Mongo
+            Arguments:
+                Host: 192.168.58.20:27017
+                Database: subench
+                Username: null
+                Password: null
+    Driver: \Webiny\Component\Mongo\Driver\Mongo
+    ResultClass: \Webiny\Component\Mongo\MongoResult

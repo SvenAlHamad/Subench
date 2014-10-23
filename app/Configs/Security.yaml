@@ -1,0 +1,35 @@
+Security:
+    Tokens:
+        MainToken:
+            Driver: '\Webiny\Component\Security\Token\CryptDrivers\Crypt\Crypt'
+            Params: [Cookie]
+            SecurityKey: $3cR3tK3y_654321
+    Encoders:
+        CryptEncoder:
+            Driver: '\Webiny\Component\Security\Encoder\Drivers\Crypt'
+            Params: [Password]
+            Salt: 'subench!'
+    UserProviders:
+        OAuth2:
+            Driver: '\Webiny\Component\Security\User\Providers\OAuth2\OAuth2'
+    AuthenticationProviders:
+        FacebookPlayer:
+            Driver: '\Webiny\Component\Security\Authentication\Providers\OAuth2\OAuth2'
+            Params:
+                Server: FacebookPlayer
+                Roles: [ROLE_PLAYER]
+        FacebookTeam:
+                Driver: '\Webiny\Component\Security\Authentication\Providers\OAuth2\OAuth2'
+                Params:
+                    Server: FacebookTeam
+                    Roles: [ROLE_TEAM]
+    Firewalls:
+        Admin:
+            RealmName: Administration
+            Anonymous: false
+            RememberMe: true
+            Token: MainToken
+            Encoder: CryptEncoder
+            UserProviders: [OAuth2]
+            AuthenticationProviders: [FacebookPlayer, FacebookTeam]
+            DecisionStrategy: affirmative
